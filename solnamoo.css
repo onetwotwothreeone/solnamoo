@@ -1,21 +1,28 @@
+body>*{
+    all:unset;
+}
+body{
+    background-color: black;
+    color: white;
+}
 a{
-    color: black;
     text-decoration: none;
 }
-#header h1{
+/* #header h1{
     text-align: center;
     color: red;
     border-bottom: solid 1px black;
-    margin-bottom: 0;
-}
+    margin-bottom: 0; 
+} */
 #header ul{
-    border: royalblue 5px solid;
+    border-bottom: 1px white solid;
     text-align:center;
+    padding-bottom:1%;
     margin: 0;
 }
-li{
+#header li,h1{
+    color: gold;
     display: inline;
-    border:black 1px solid;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -33,4 +40,9 @@ li{
 }
 #article .item2 h2{
     margin-top: 5%;
+}
+#header{
+    background-color: black;
+    position: sticky;
+    top: 0;
 }

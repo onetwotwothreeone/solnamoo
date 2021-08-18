@@ -2,25 +2,30 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="solnamoo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>solnamoo</title>
+    <script src="solnamoo.js"></script>
 </head>
 <body>
     <div id="header">
-        <a  href="solnamoo.html"><h1>solnamoo</h1></a>
+        <a  href="solnamoo.html"><h1 onclick="alert('hi')">solnamoo</h1></a>
     
         <ul>
-            <li><a href="solCoding.html">coding</a></li>
-            <li><a href="coffee.html">coffee</a></li>
-            <li><a href="sports.html">sports</a></li>
-            <li><a href="eng.html">english</a></li>
-            <li><a href="finalCut.html">final cut</a></li>
-            <li><a href="guitar.html">guitar</a></li>
-    
+            <script>
+                let links = ['coding','coffee','sports','english','finalCut','guitar'];
+                let i = 0;
+                while(i < links.length){
+                    document.write('<a href="'+links[i]+'.html"><li>'+links[i]+'</li></a>');
+                    i=i+1;
+                }
+            </script>
         </ul>
+   
     </div>
     <div id="article">
         <div class="item1"></div>
             <div class="item2">
+              <!-- 
             <h2>지식에 대한 생각을 바꿔준 말-생활코딩에서 발췌</h2>
             <p>만약 우리가 20년 전에</p>
             <p>h1 태그가 무엇인지 궁금했다면</p>
@@ -45,7 +50,6 @@
             <p>자꾸 생각하고, 이야기하고, 사용하다 보면
                 익숙해지게 됩니다.</p>
             <p>본질과 교양, 혁신과 직업</p>
-            <img src="">
             <p>생각해 보면 우리 마음이 힘든 것은 교양에 있을 때 빠르게 높아지는 능력의 속도를 보지 않고 낮은 능력을 보기 때문이 아닐까요? 또 직업에 있을 때는 높아진 능력을 보지 않고 느려진 속도를 보기 때문이 아닐까요?</p>
             <p>인류는
                 눈에 보이는 단순함을 조작해서
@@ -61,8 +65,12 @@
                 머리가 너무 복잡해지기 전에
                 여러분의 프로젝트를 시작하세요.
                 여러분의 컨텐츠를 만드세요.</p>
+                <p>이해하는 것보다 익숙해지는 것</p>
+
+            <p>지식을 아는 것 만큼 중요한 지식의 키워드를 아는 것</p>
+            <p>검색결과를 알려주지말고 검색하는 법을 알려줘라</p>
+            <p>코딩은 얼마나 정리를 잘하느냐 인 것 같다. </p> -->
             </div>    
-        <div class="item3"></div>
     </div>
 </body>
 </html>

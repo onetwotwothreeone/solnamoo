@@ -18,3 +18,11 @@ h2{
 a{
     text-decoration: none;
 }
+h3{
+    color: #FFD700;
+    text-align: center;
+}
+h2:hover{
+    background-color: wheat;
+    color: blueviolet;
+}

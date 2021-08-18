@@ -5,10 +5,29 @@
     <title>sol's coffee book</title>
 </head>
 <body>
-    
+    <a href="solnamoo.html"><h3 id="myBtn"onclick="alert('go back to solnamoo!')">solnamoo</h3></a>
     <h1>Coffee</h1>
-    <a href="coffeeLateeArt..html" target="_blank"><h2>latte art</h2></a>
+    <a href="coffeeLatteArt.html"><h2>latte art</h2></a>
     <a href=""><h2>espresso machine</h2></a>
     <a href=""><h2>recipe</h2></a>
     <a href=""><h2>Brewing Coffee</h2></a>
+    <script>
+        var x = document.getElementById("myBtn");
+        x.addEventListener("mouseover", myFunction);
+        x.addEventListener("click", mySecondFunction);
+        x.addEventListener("mouseout", myThirdFunction);
+
+        function myFunction() {
+             document.getElementById("myBtn").style.color = 'black';
+        }
+
+        function mySecondFunction() {
+            document.getElementById("myBtn").style.color = 'brown';
+        }
+
+        function myThirdFunction() {
+            document.getElementById("myBtn").style.color = 'green';
+        }
+</script>
+
 </body>

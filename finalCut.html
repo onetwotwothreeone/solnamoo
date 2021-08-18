@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="solnamoo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>solnamoo</title>
+    <script src="solnamoo.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a  href="solnamoo.html"><h1 onclick="alert('hi')">solnamoo</h1></a>
+    
+        <ul>
+            <script>
+                let links = ['coding','coffee','sports','english','finalCut','guitar'];
+                let i = 0;
+                while(i < links.length){
+                    document.write('<a href="'+links[i]+'.html"><li>'+links[i]+'</li></a>');
+                    i=i+1;
+                }
+            </script>
+        </ul>
+   
+    <!-- <h2>Final Cut Pro</h2>
+    <ul>
+        <h3>파이널 컷의 특징</h3>
+        <li>영상 시퀀싱 본연의 기능에 충실</li>
+        <li>Apple Mac에서만 구동된다.</li>
+        <li>가볍고 빠르다.</li>
+        <li>사용자 친화적 직관성</li>
+        <li>영화 다큐멘터리등 스토리텔링에 적합</li>
+        <li>정밀한 영상가공에는 부족한 기능</li>
+    </ul>
+
+    파이널 컷에서 사용하는 위계(hierarchy)
+    파이널 컷에서 라이브러리는 finder입장에선 번들이다.
+    영상을 제작하는 측면에서 라이브러리라고 하며, 영상을 저장하는 측면에서 번들이라고 한다. 즉 라이브러리가 번들이다. 
+
+    *사용자가 지정한 곳에 푸티지를 저장 할 수도 있지만 파이널 컷이 권장하는 기본적 방식은 fcpbundle파일 안에 저장하는 것이다. 
+
+    파이널 컷[라이브러리] = Finder[bundle](fcpbundle 확장자) - footage/Source(영상파일/ 각종 소스)
+
+    파이널 컷
+    -Library
+    -Event
+    -Folder
+    -Collection
+    -Footage/Source or Project
+    -Event에 바로 Project가 들어갈 수 있고, Project 키워드를 collection으로 분류 할 수도 있다. 
+     -->
+
+    
+</body>
